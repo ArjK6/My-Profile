@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My Project Idea</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Arjun Kumar</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="ITInterest.html">Interest in IT</a></li>
+								<li><a href="idealJob.html">Ideal Job</a></li>
+								<li><a href="PersonalProfile.html">Personal Profile</a></li>
+								<li><a href="projectIdea.html">Project Idea</a></li>
+								<li><a href="references.html">References</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>My Project Idea</h2>
+								<p>Here is a brief outline of project I would like to initialise.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Overview</h3>
+									<p>My project is to develop a mobile app available on iOS and Google Play that aims to provide a ‘form check’ service for both beginner and intermediate weight training individuals. The app will capture a video of the user performing an exercise and will then provide information and insights regarding the captured data for the user to utilize to maximise their efforts in the gym safely. </p>
+
+									<h3 class="major">Motivation</h3>
+									<p>Up until a few years ago I was morbidly obese and had been so for most of life since my teenage years. In 2017 I decided to make a change and there began my fitness journey. Over the course of a year I managed to lose 30 kilos primarily through dieting with some exercise thrown in. My main activities were playing soccer and the occasional morning run at time. But as my body changed my goals changed as well. I wasn’t satisfied with just losing weight, I wanted to be athletic and look it too. Thus I decided to join a gym and begin weight training. </p>
+
+									<p>I recently joined a workout plan online and this included a discussion board where everyone within the plan is free to discuss, motivate and provide advice to each other on their fitness journeys. I noticed that almost 50% of posts on this page where people requesting ‘form checks’. Form checks were requests that people made by posting a video of them performing an exercise and asking for any critique or corrections that were required to perform the exercise correctly in a safe, effective manner to avoid injury and maximise muscle stimulation.  Often a lot of these posts would not receive a reply due to the sheer volume of posts on the page. Thus I decided to look into alternative methods to provide answers. I researched if any apps existed that provided such a service and had trouble locating any on the iOS or Android App store. The issue was further compounded by the fact that the term ‘Form Check’ is used predominantly in the IT world for web design. Thus I decided to design my own. </p>
+
+									<h3 class="major">Description</h3>
+									<p>The primary function of this app will be to capture a video of the user performing the exercise. The user should denote the exercise being performed before the video has been captured. The captured video will be uploaded to a cloud database. Ideally this type of data is best analysed utilizing motion capture suites. This might be ideal to establish the baseline ‘gold standard’ models which can then be used for reference and comparison later. However due to limitations of smartphone cameras we will have to rely on video recognition software to extrapolate information regarding the user and the exercise being performed. Once the video is uploaded to a cloud database analysis can begin. A number of cloud hosting solutions which already employ existing video analysis API’s such as AWS and Amazon Rekognition, Google Cloud and Vision AI, Azure and Video Analyser. Most of these cloud solution already have a number of video analysis API’s on offer but due to the specificity of this task a new API will likely be required. This API will likely require the implementation of body tracking software to extract the exact information we need for our preferred analysis the body’s biomechanics. Such software like LightBuzz which ‘using any RGB camera you can access the 2d coordiantes of every joint in real time’ (LightBuzz, 2021) exist but comes with a hefty price tag to utilize their SDK. Another option would be open source software like OpenPose. OpenPose’s main functionality is body keypoint detection. Additionally it also supports API’s for custom functionality which is something that is relevant to my app design. Thus the resulting data once extracted, processed and analyzed against our gold standard model will then be relayed back to user via an analysis tool in the app. It will contain the original video overlayed with important information. This information can be presented in an AR medium with a model super-imposed over the user in the initial video highlighting key points that need be addressed if present and where the user is going wrong when compared to the correct AR model. Alternatively we can simply highlight areas within the user’s video where we have detected abnormality in comparison to our gold standard model and inform them in a more basic manner. This will allow the user to be able to ascertain where exactly they are wrong and what movements they should be targeting to correct. Initially functionality will probably be restricted to the three major exercises, being the deadlift, squat and bench press. Depending on which exercise is being analysed will determine the camera angle and orientation required for the user video. Additionally multiple angle functionality will be required in order to be able to fully address all of the user’s biomechanic. Major corrections are the goal with minor corrections being hard to discern through our limited data and my limited programming capability. Further development could lead to this outcome being changed. </p>
+
+									<p>Additionally once users are onboarded I am hoping to be able to utilize the data to apply some machine learning analysis in order to be able to more efficiently and correctly process any future data that is obtained. Such services are already available in all the major cloud computing sources (Azure, AWS, etc.) are an option as well as engaging more specialized systems such as Nvidia DIGITS. This will result in a positive impact for both the user as well as the developer the more the app is utilized. </p>
+
+									<h3 class="major">Tools and Techonologies</h3>
+									<p>A typical software developer requires access to a dedicated computer. Access to a viable smartphone would also be preferrable in order to test and debug the software as necessary. Software required would include a code editor such as Visual Studio Code and any related plug ins depending on the language of the coding being done. Most cloud solutions offer their own Source Develop Kit (SDK) and this would be required depending on which cloud solution was chosen. Mobile app development specific software would also be required. Options such as React Native, Swift and Flutter are all viable. The biggest hurdle would be the cost associated with utilizing LightBuzz but the alternative to that is the free and open source OpenPose. The caveat being API development being required to fit the program to my needs. </p>
+
+									<h3 class="major">Skills Required</h3>
+									<p>Ideally this would be a task undertaken by an experienced developer who has been exposed to a variety of software designing solutions. The feasibility of this project is hinged on my capabilities to code and develop the necessary software in order to be able to achieve my desired outcome. As such the skills required will be extensive full stack coding experience in my view. This will address all coding related to app development, cloud service utilization, user interface design, API development and proprietary analysis software development. As of yet I am quite far from that goal but the potential for a barebones app is possible with my minimal coding experience provided I can build on it through the year and beyond.  </p>
+
+									<h3 class="major">Outcome</h3>
+									<p>The ideal outcome is for an app that can easily help users identify problems with their weightlifting technique and help them address their problems through intuitive data which will enable them to correct and progress with their weightlifting goals safely. The app should be easy to access and easy to use for the consumer. The original problem that brought my attention to this market gap can be solved by introducing this solution to the users in my discussion board. As they are already posting videos of themselves they already possess the necessary tools in order to be able to utilize this app once it is available. This app has the potential to have a large impact in the booming fitness industry. Any new weight training individuals will have access to real time fitness advice tailored to their specific needs when they need it. The potential is limitless, the app has a worldwide reach due to nature of delivery and once users are onboarded the app will only become better with time. I hope to make this a reality. </p>
+
+									<section class="features">
+										<article>
+											<a href="https://lightbuzz.com/" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">LightBuzz</h3>
+											<p>Have a look at what LightBuzz brings to the table</p>
+											<a href="https://lightbuzz.com/" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3 class="major">OpenPose</h3>
+											<p>Check out what OpenPose is all about</p>
+											<a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Thanks for you time!</h2>
+							<p>I appreciate you taking some time to check out my profile. If you have any questions or queries please dont hesitate to reach out to me via any of the links below.</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									RMIT University<br />
+									124 La Trobe St<br />
+									Melbourne VIC 3000
+								</li>
+								<li class="icon solid fa-phone">(000) 000-0000</li>
+								<li class="icon solid fa-envelope"><a href="#">s3918010@student.rmit.edu.au</a></li>
+								<li class="icon brands fa-twitter"><a href="#">twitter.com/arjyyyk</a></li>
+								<li class="icon brands fa-instagram"><a href="#">instagram.com/arjybarjy_26/</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
