@@ -1,3 +1,9 @@
+Here is my repo for Assignment 1 for Intro to IT
+
+below is data from the template that I used which I will leave for copyright purposes.
+
+
+
 Solid State by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
